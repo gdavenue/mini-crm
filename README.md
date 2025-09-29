@@ -4,7 +4,7 @@
 
 ```bash
 # 1. Клонувати репозиторій
-git clone git@github.com:gdavenue/mini-crm.git
+git clone https://github.com/gdavenue/mini-crm.git
 cd mini-crm
 
 # 2. Встановити залежності
@@ -50,7 +50,7 @@ composer run dev
 
 ### Створення заявки
 
-`POST /api/tickets`\
+`POST /api/tickets`
 
 > [!TIP]
 > Поля: `name`, `phone`, `email`, `subject`, `body`, `file[]`
@@ -60,14 +60,14 @@ composer run dev
 
 ### Статистика заявок
 
-`GET /api/tickets/statistics`\
+`GET /api/tickets/statistics`
 
 > [!NOTE]
 > Повертає кількість заявок за добу, тиждень, місяць.
 
 ### Список заявок
 
-`GET /api/tickets`\
+`GET /api/tickets`
 
 > [!TIP]
 > Фільтри: `date`, `status`, `email`, `phone`.
